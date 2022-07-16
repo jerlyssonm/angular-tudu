@@ -1,0 +1,59 @@
+<div class="dashHome">
+    <div class='head'>
+        <span></span>
+        <h1>Tarefas</h1>
+        <div class="search-box">
+            <input type="text" class="input-search" placeholder="Digite aqui..."/>
+            <a class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M14.53 15.59a8.25 8.25 0 111.06-1.06l5.69 5.69a.75.75 0 11-1.06 1.06l-5.69-5.69zM2.5 9.25a6.75 6.75 0 1111.74 4.547.746.746 0 00-.443.442A6.75 6.75 0 012.5 9.25z"></path></svg>
+            </a>
+        </div>
+    </div>
+    <div class='box-task'>
+        <h2>A FAZER</h2>
+        <!-- {listIncomplete.map((task, idx) => 
+            <RectangleTask 
+            key={idx}
+            completed={task.completed}
+            category={task.category}
+            title={task.title}
+            description={task.description}
+            />
+        )}
+        {
+            (user[0].tasks.length > 3) ? 
+            <span class='all-span'>Ver todos</span>
+            :
+            ""
+        } -->
+    </div>
+    <div class='box-progress'>
+        <h2>EM PROGRESSO</h2>
+        <div class="scroll">
+            <!-- {
+                taskIncomplete.map((task,idx) => 
+                <TaskProgress 
+                key={idx}
+                id={task.id}
+                category={task.category}
+                title={task.title}
+                description={task.description}
+                />
+                )
+            } -->
+        </div>
+        <span class='all-span'>Ver todos</span>
+    </div>
+    <div class="completed">
+        <h2>CONCLUÍDO</h2>
+        <!-- {
+            taskCompleted.map((item, idx) => 
+            <TaskCompleted 
+                key={idx}
+                title={item.title}
+                description={item.description}                    
+            />                    
+            )
+        } -->
+    </div>
+</div>

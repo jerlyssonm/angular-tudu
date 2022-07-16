@@ -1,0 +1,107 @@
+.dashHome {
+    width: 80%;
+    margin: 0 auto;
+    height: 90%;
+    max-width: 400px;
+}
+.head h1{
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+h2{
+    text-align: left;
+    color: var(--primary1);
+    font-size: .9em;
+    font-weight: 600;
+    padding-left: 5px;
+}
+.head{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.search-box {    
+    position: relative;
+    width: 0;
+    display: flex;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+.icon svg{
+    position: absolute;
+    width: 2em;
+    height: 1.5em;
+    right: -15px;
+    top: -15px;
+}
+.input-search{
+    z-index: 1;
+    width: 0;
+    position: absolute;
+    top: -15px;
+    left: 17px;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.input-search:focus {
+    width: 180px;
+    left: -180px;
+    border-bottom: 1px solid rgb(155, 155, 155);
+    background-color: white;
+}
+.box-task {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 2em;
+}
+.task{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+.check{
+    background: none;    
+    height: 1.5em;
+    width: 1.5em;
+}
+h5{
+    font-weight: 500;
+    font-size: .7em;
+}
+p{
+    font-size: .5em;
+    color: rgb(85, 84, 84);
+}
+.all-span{
+    text-align: end;
+    font-size: .6em;
+}
+.scroll{
+    max-width: 390px;
+    padding: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1rem;
+    overflow-x: auto;
+}
+.scroll::-webkit-scrollbar{
+    display: none;
+}
+.box-progress .all-span{
+    float: right;
+}
+.completed{
+    margin-top: .8em;
+}
