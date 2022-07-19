@@ -11,21 +11,9 @@
     </div>
     <div class='box-task'>
         <h2>A FAZER</h2>
-        <!-- {listIncomplete.map((task, idx) => 
-            <RectangleTask 
-            key={idx}
-            completed={task.completed}
-            category={task.category}
-            title={task.title}
-            description={task.description}
-            />
-        )}
-        {
-            (user[0].tasks.length > 3) ? 
-            <span class='all-span'>Ver todos</span>
-            :
-            ""
-        } -->
+        <div *ngFor="let i of user">
+            <h2>{{i.title}}</h2>
+        </div>
     </div>
     <div class='box-progress'>
         <h2>EM PROGRESSO</h2>
